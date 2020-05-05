@@ -1,0 +1,154 @@
+      *{
+        margin: 0;
+        padding: 0;
+        background: #00fa9a;
+        }
+
+      body {
+        font-family: sans-serif;
+        margin-top: 40px;
+      }
+
+      .regfrom {
+        width: 800px;
+        background-color: rgb(0, 0, 0, 6);
+        margin: auto;
+        color: #fff
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+      }
+
+      .main {
+        background-color: rgb(0, 0, 0, 5);
+        width: 800px;
+        margin: auto;
+      }
+
+      form {
+        padding: 10px;
+      }
+
+      #name {
+        width: 100%;
+        height: 100px;
+      }
+
+      .name {
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 480px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+      }
+      
+      .nik {
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 480px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .radio {
+        display: inline-block;
+        padding-right: 70px;
+        font-size: 25px;
+        margin-left: 25px;
+        margin-top: 15px;
+        color: white;
+      }
+
+      .radio input {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .profesi {
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 480px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .skillset {
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 480px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .adress {
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 480px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .birthdate {
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 480px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .codename {
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 480px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .button {
+        background-color: #3baf9f;
+        display: block;
+        margin: 20px 0px 0px 20px;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid #366473;
+        padding-right: 14px 110px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        transition: 0.25px;
+      }
+      
+      .button:hover {
+        background-color: #5390f5;
+      }

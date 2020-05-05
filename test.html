@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="Register.css"/>
+    <title>Registrasi</title>
+
+  </head>
+  <body>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Registration Successful</h4>
+      </div>
+      <div class="modal-footer">
+        <a href="Login.html" class="modal-close waves-effect waves-green btn-flat">Login</a>
+      </div>
+    </div>
+
+  <div class="row center">
+    <div class="card white card-feature" id="cardprofile">
+      <div class="card-content black-text">
+      </div>
+        <div class="regform"><h1>Registrasi Form</h1></div>
+        <div class="main">
+          <form>
+            <div class="row center-align">
+              <div class="input-field col s8">
+                <div id="name">
+                  <h2 class="name" style="color: black">Name</h2>
+                    <input class="name" type="text" name="name"><br>
+                </div>
+              </div>
+            </div>
+
+            <div class="row center-align">
+              <div class="input-field col s8">
+                <h2 class="name" style="color: black">NIK</h2>
+                <input class="nik" type="text" name="nik">
+              </div>
+            </div>
+
+            <p>
+              <span style="color: black">Member Type</span>
+            <label class="radio1">
+            <input name="radio-one" type="radio" checked />
+            <span style="color: black">Civilian</span>
+            </label>
+            <label>
+              <input name="radio-one" type="radio" />
+              <span style="color: black">Guild Member</span>
+            </label>
+            </p>
+
+            <p>
+              <span style="color: black;">Join Period</span>
+
+            <label class="radio2">
+            <input name="radio-two" type="radio" checked />
+            <span style="color: black">1 month</span>
+            </label>
+
+            <label>
+              <input name="radio-two" type="radio" />
+              <span style="color: black">3 month</span>
+            </label>
+
+            <label>
+              <input name="radio-two" type="radio" />
+              <span style="color: black">half year</span>
+            </label>
+
+            <label>
+              <input name="radio-two" type="radio" />
+              <span style="color: black">year</span>
+            </label>
+
+        
+            <div class="row center-align">
+              <div class="input-field col s8">
+                <h2 class="profesi" style="color: black">Profesi</h2>
+                <input class="profesi" type="text" name="profesi">
+              </div>
+            </div>
+
+            <div class="row center-align">
+              <div class="input-field col s8">
+                <h2 class="skillset" style="color: black">Skillset</h2>
+                <input class="skillset" type="text" name="skillset">
+              </div>
+            </div>
+
+            <div class="row center-align">
+              <div class="input-field col s8">
+                <h2 class="adress" style="color: black">Adress</h2>
+                <input class="adress" type="text" name="adress">
+              </div>
+            </div>
+
+            <div class="row center-align">
+              <div class="input-field col s8">
+                <h2 class="birthdate" style="color: black">Birth Date</h2>
+                <input class="birthdate" type="text" name="birthdate">
+              </div>
+            </div>
+
+            <div class="row center-align">
+              <div class="input-field col s8">
+                <h2 class="codename" style="color: black">Code Name</h2>
+                <input class="codename" type="text" name="codename">
+              </div>
+            </div>
+
+            <a class="btn waves-effect red btn modal-trigger" href="#modal1">Register</a>
+          </form>
+      </div>
+    </div>
+  </div>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems, {});
+
+        var elems2 = document.querySelectorAll('.modal');
+        var instances2 = M.Modal.init(elems2, {});
+        });
+      </script>
+
+  </body>>
+</html>
