@@ -1,0 +1,77 @@
+@media only screen and (max-width: 768px) {
+    .notice {
+        font-size: 11px;
+    }
+  }
+
+.button-join {
+    border: 2px solid #C1272D;
+    background-color: #C1272D;
+    color: white;
+    padding: 2px 35px;
+    font-size: 20px;
+    cursor: pointer;
+    border-color: #C1272D;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .button-about {
+      border: 2px solid #50232a;
+      background-color: transparent;
+      color: #50232a;
+      padding: 5px 30px;
+      font-size: 25px;
+      cursor: pointer;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+  
+  .button-join:focus{
+      background-color: #C1272D !important;
+  }
+  
+  .button-about:focus {
+      background-color: transparent !important;
+  }
+  
+  #tombol-tambah {
+      border: 2px solid red;
+      background-color: white;
+      color: blue;
+      padding: 0px 15px;
+      border-color: red;
+      border-radius: 30%;
+      margin-bottom: 10px;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  
+  .card {
+      border-radius: 15%;
+  }
+  
+  .active {
+      color: #555;
+  }
+  
+  table, th ,td {
+      background: #FFD700 !important;
+      border: 1px solid #009245 !important;
+  }
+  
+  table {
+      border-collapse:separate;
+      border-radius: 5px;
+      width: 100%;
+  }
+  
+  td {
+      padding: 7px;
+  }
+  
+  .carousel {
+      min-height: 195px;
+      max-height: 195px;
+  }
