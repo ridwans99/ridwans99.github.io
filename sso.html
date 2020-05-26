@@ -4,12 +4,43 @@
 	<!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="sso.css"/>
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-signin-client_id" content="1059580585255-q2g0qnddgpo6bodguns57ocpk0k0smfj.apps.googleusercontent.com">
   <title>Login with</title>
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script>
+  	var googleUser = {};
+      var startApp = function() {
+        gapi.load('auth2', function(){
+          // Retrieve the singleton for the GoogleAuth library and set up the client.
+          auth2 = gapi.auth2.init({
+            client_id: '1059580585255-q2g0qnddgpo6bodguns57ocpk0k0smfj.apps.googleusercontent.com',
+            cookiepolicy: 'single_host_origin',
+            // Request scopes in addition to 'profile' and 'email'
+            //scope: 'additional_scope'
+          });
+          attachSignin(document.getElementById('google'));
+        });
+      };
+
+      function attachSignin(element) {
+        console.log(element.id);
+        auth2.attachClickHandler(element, {},
+            function(googleUser) {
+              sessionStorage.setItem("name", googleUser.getBasicProfile().getName());
+              window.location.href = "test.html";
+              // document.getElementById('name').innerText = "Signed in: " +
+              //     googleUser.getBasicProfile().getName();
+            }, function(error) {
+              alert(JSON.stringify(error, undefined, 2));
+            });
+      }
+  </script>
 </head>
 
 <body class="white">
@@ -47,29 +78,29 @@
 					<h3>Registrasi</h3>
 					<div class="row">
 						<button class="button-take">
-							<a href="https://gmail.com/">
-						<p><img src="img/google.png" width="30%" style="vertical-align: middle;"> with Google</p>
-							</a>
+              <div id="google" data-onsuccess="onSignIn" style="width:autopx;height:autopx;"><img src="img/google.png" width="30%" style="vertical-align: middle;"> with Google</div>
+              <div id="name"></div>
+              <script>startApp();</script>
 						</button>
 					</div>
 					<div class="row">
 						<button class="button-take">
 							<a href="https://facebook.com">
-					<p><img src="img/fb.png" width="10%" style="vertical-align: middle;"> with Facebook</p>
+					    <p><img src="img/fb.png" width="10%" style="vertical-align: middle;"> with Facebook</p>
 							</a>
 					</button>
 					</div>
 					<div class="row">
 						<button class="button-take">
 							<a href="https://twitter.com">
-					<p><img src="img/twitter.png" width="10%" style="vertical-align: middle;"> with Twitter</p>
+					    <p><img src="img/twitter.png" width="10%" style="vertical-align: middle;"> with Twitter</p>
 							</a>
 					</button>
 					</div>
 					<div class="row">
 						<button class="button-take">
 							<a href="https://github.com">
-					<p><img src="img/github.png" width="10%" style="vertical-align: middle;"> with Github</p>
+					    <p><img src="img/github.png" width="10%" style="vertical-align: middle;"> with Github</p>
 							</a>
 					</button>	
 					</div>	
@@ -77,7 +108,7 @@
 					<div class="row">
 						<button class="button-take">
 							<a href="test.html">
-					<p width="10%" style="vertical-align: middle;"> with Form</p>
+					    <p width="10%" style="vertical-align: middle;"> with Form</p>
 							</a>
 						</button>
 					</div>			
@@ -103,6 +134,19 @@
         </div>
     </footer>
 
+<!--JavaScript at end of body for optimized loading-->
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script>
+        const dropdown1= document.querySelectorAll('.dropdown-trigger');
+      M.Dropdown.init(dropdown1);
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems, {});
+        var elems2 = document.querySelectorAll('.sidenav');
+        var instances2 = M.Sidenav.init(elems2, {});
+        });
+      </script>
 </body>
 </html>
