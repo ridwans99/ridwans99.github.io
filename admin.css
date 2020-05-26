@@ -5,13 +5,12 @@
   }
 
 .button-join {
-    border: 2px solid #C1272D;
-    background-color: #C1272D;
+    background-color: aqua;
     color: white;
     padding: 2px 35px;
     font-size: 20px;
     cursor: pointer;
-    border-color: #C1272D;
+    border-color: black;
     border-radius: 15px;
     margin-bottom: 30px;
   }
@@ -26,10 +25,6 @@
       border-radius: 15px;
       margin-bottom: 30px;
     }
-  
-  .button-join:focus{
-      background-color: #C1272D !important;
-  }
   
   .button-about:focus {
       background-color: transparent !important;
