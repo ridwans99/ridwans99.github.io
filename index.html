@@ -19,12 +19,16 @@
           <div class="container">
             <div class="nav-wrapper">
               <div class="col s12 center-align">
-                <a href="#" class="brand-logo"><img src="img/1.png" class="vertical-align" alt="Logo" width="60"><span>Fox Guild</span></a>
+                <a href="#" class="brand-logo"><img src="img/1.png" class="vertical-align" alt="Logo" width="60"><span>Fox</span></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                   <li><a href="">| Home</a></li>
+                  <li><a href="#about" class="text-nav">| About</a></li>
+                  <li><a href="#benefits" class="text-nav">| Benefits</a></li>
+                  <li><a href="#faq" class="text-nav">| FAQ</a></li>
                   <li><a href="sso.html" class="text-nav">| Register</a></li>
                   <li><a href="Login.html" class="text-nav">| Login</a></li>
+                  <li><a href="admin.html" class="text-nav">| Admin</a></li>
                   <li><a href="dev_info.html" class="text-nav">| Dev_Info</a></li>
                 </ul>
               </div>
@@ -35,15 +39,30 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li><a href="#">Home</a></li>
+    <li><a href="#about" class="text-nav">About</a></li>
+    <li><a href="#benefits" class="text-nav">Benefits</a></li>
+    <li><a href="#faq" class="text-nav">FAQ</a></li>
     <li><a href="Login.html">Login</a></li>
     <li><a href="Register.html">Register</a></li>
+    <li><a href="admin.html" class="text-nav">Admin</a></li>
     <li><a href="dev_info.html">Dev_Info</a></li>
   </ul>
 
-<!-- header -->
-  <div class="header">
-    <img src="img/header.png" style="width: 1350px">
-  </div>
+
+<div class="scrollspy" id="home">
+      <div class="row" style="padding-bottom: 40px;">
+          <div class="col s12 m6 center-align">
+              <div style="margin-bottom: 0px; margin-top: 80px;">
+              <p style="font-size: 40px; margin-bottom: 0px; margin-top: 0px; color:#423c3e;">Tingkatkan Kompetensi Kerja Anda</p>
+              <p style="font-size: 20px; margin-top: 0px; color:#423c3e; margin-bottom: 40px;">Bergabunglah dengan kami dan kembangkan potensi anda.</p>
+              <a href="sso.html"><button class="btn waves-effect blue btn modal-trigger text black" href="#modal1">Daftar Sekarang</a>
+              </div>
+          </div>
+          <div class="col hide-on-small-only m6 center-align">
+            <img class="" src="img/company.png" alt="Team" width="500px">
+          </div>
+      </div>
+</div>
 
 <!-- running text -->
   <div id="runningtext">
@@ -52,56 +71,130 @@
     </marquee>
   </div>
 
-<!-- Logo -->
-  <div class="row">
-    <div class="col s12 m4 l4">
-      <div class="card white">
-        <div class="card-content white-text margin-top"> 
-          <img src="img/fox.png" class="center-align" style="width: 105px; height: 105px; margin-left: 140px;">
-          <p>Motto: Hal yang paling penting</p>
-          <p>adalah solidaritas dan</p>
-          <p>kerjasama yang baik</p>
-          <p>Adress: Jl. Mandor Hasan No.41</p>
+    <div class="container">
+      <div class="center-align scrollspy" id="about">
+        <h4 id="our-jobs">Tentang Kami</h4><br><br>
+      </div>
+        <div class="center-align">
+          <span style="font-size: 20px;">FOX adalah program pengembangan kompetensi yang ditujukan untuk pencari kerja yang membutuhkan peningkatan kompetensi.</span><br>
+        </div>
+    </div>
+
+<div class="">
+        <div class="container">
+          <div class="center-align scrollspy" id="Struktur">
+            <h4 id="our-jobs">Struktur Company</h4><br><br>
+          </div>
+          <div class="row">
+            <div class="col s12 m4 center-align">
+              <div class="card aqua z-depth-3" style="height: 15em;">
+                <div class="card-content white-text">
+                  <img src="img/mark.jpg" alt="work" width="150px" height="110px">
+                  <span class="card-title center-align" style="margin-bottom:0px; margin-top:20px; font-weight: bold; font-size: 18px; color: black;">Mark</span>
+                  <p>Direksi</p>
+
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4 center-align">
+              <div class="card aqua z-depth-3">
+                <div class="card-content white-text font-fira" style="height: 15rem;">
+                  <img src="img/sandi.jpg" alt="work" width="150px" height="110px">
+                  <span class="card-title center-align" style="margin-top:20px; font-weight: bold; font-size: 18px; color: black;">Sandiaga</span>
+                  <p>Direktur</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4 center-align">
+              <div class="card aqua z-depth-3">
+                <div class="card-content white-text" style="height: 15rem;">
+                  <img src="img/nadim.jpg" alt="work" width="150px" height="110px">
+                  <span class="card-title center-align" style="margin-top:20px; font-weight: bold; font-size: 18px; color: black;">Nadim</span>
+                  <p>Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="">
+        <div class="container">
+          <div class="center-align scrollspy" id="benefits">
+            <h4 id="our-jobs">Keuntungan</h4><br><br>
+          </div>
+          <div class="row">
+            <div class="col s12 m4 center-align">
+              <div class="card blue z-depth-3" style="height: 15em;">
+                <div class="card-content white-text font-fira">
+                  <img src="img/org1.png" alt="work" width="150px" height="110px">
+                  <span class="card-title center-align" style="margin-bottom:0px; margin-top:20px; font-weight: bold; font-size: 20px; color: yellow;">Test Motivasi</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4 center-align">
+              <div class="card blue z-depth-3">
+                <div class="card-content white-text font-fira" style="height: 15rem;">
+                  <img src="img/org2.png" alt="work" width="150px" height="110px">
+                  <span class="card-title center-align" style="margin-top:20px; font-weight: bold; font-size: 20px; color: yellow;">Pelatihan</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4 center-align">
+              <div class="card blue z-depth-3">
+                <div class="card-content white-text" style="height: 15rem;">
+                  <img src="img/org3.png" alt="work" width="150px" height="110px">
+                  <span class="card-title center-align" style="margin-top:20px; font-weight: bold; font-size: 20px; color: yellow;">Sosialisasi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+      <div class="col s12 m6 center-align">
+        <div class="card aqua materialize">
+          <div class="center-align scrollspy" id="faq">
+          <h4 id="our-jobs">FAQ</h4><br><br>
+          </div>
+          <div class="center-align">
+          <p class="text red">1. Bagaimana caranya daftar akun ?</p>
+          <div style="color:#5f5d5d;">Dengan mengklik <a href="sso.html">link</a><span> berikut anda akan di arahkan ke menu registrasi dengan menggunakan<br>sosial media anda atau dengan mengisi form</span></div>
+          <p class="text red">2. Bagaimana caranya login akun ?</p>
+          <div style="color:#5f5d5d;">Dengan mengklik <a href="Login.html">link</a><span> berikut anda akan di arahkan ke menu login</span></div>
+          <p class="text red">3. Pekerjaan apa saja yg dapat di post ? ?</p>
+          <div style="color:#5f5d5d;">Anggota yang sudah bergabung di fox dapat memposting pekerjaan apa saja <br>dan dapat menerima pekerjaan apa saja</a></div>
+          <p class="text red">4. Apakah ada imbalan mininum yang diterima ?</p>
+          <div style="color:#5f5d5d;">Tidak ada imbalan minimun, anda akan mendapatkan imbalan sesuai keahlian anda</a></div>
+          <p class="text red">5. Apa manfaat awal menjadi anggota ?</p>
+          <div style="color:#5f5d5d;">Anda akan mendapatkan saldo 200.000 untuk membeli pelatihan</a></div>
+          <p class="text red">6. Bagaimana alur pekerjaan baru dapat di post sampai dengan imbalannya ?</p>
+          <div style="color:#5f5d5d;">Anda bisa membuat pekerjaan apapun yang anda inginkan tetapi dengan syarat pekerjaan itu harus legal tidak boleh ilegal, setelah anda post pekerjaan anggota lain dapat melihat post anda dan akan mendapatkan imbalan sesuai dengan kesulitan pekerjaannya</a></div>
+          <p class="text red">7. Bagaimana dengan membership rank dan kriterianya ?</p>
+          <div style="color:#5f5d5d;">Ada empat peringkat keanggotaan di Fox yaitu Iron, Silver, Gold, dan Platinum. Ada satu hal yang menentukan peringkat anda, yaitu point. Untuk mencapai peringkat tertentu, anda perlu meningkatkan poin anda dengan menyelesaikan pekerjaan.</a></div>
+          </div>
+        </div>
+      </div>  
     </div>
   
-  <!-- jobs 1 -->
-    <div class="col s12 m4 l4">
-      <div class="card yellow">
-        <div class="card-content white-text">
-              <span class="card-title center-align" style="font-size: 24px; color: black; opacity: 50%">Job</span>
-              <p style="font-family: Rockwell; opacity: 50%;">Task: Menghabisi Dungeon</p>
-              <p style="font-family: Rockwell; opacity: 50%;">Reward: Epic Sword</p>
-              <p style="font-family: Rockwell; opacity: 50%;">Min Rank: Gold</p>
-              <p style="font-family: Rockwell; opacity: 50%;">Post By: FOX_Magic</p>
-              <p style="font-family: Rockwell; opacity: 50%; color: red">*8hours remaining</p>
-              <span class="button-take" style="display: block; margin: 0px 15px; margin-top: 15px; opacity: 50%">Take</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m4 l4">
-      <div class="card yellow">
-        <div class="card-content white-text">
-            <span class="card-title center-align" style="font-size: 24px; color: black; opacity: 50%">Job</span>
-            <p style="font-family: Rockwell; opacity: 50%;">Task: Mengejar Black King</p>
-            <p style="font-family: Rockwell; opacity: 50%;">Reward: Armor</p>
-            <p style="font-family: Rockwell; opacity: 50%;">Min Rank: Gold</p>
-            <p style="font-family: Rockwell; opacity: 50%;">Post By: FOX_Schtzo</p>
-            <p style="font-family: Rockwell; opacity: 50%; color: red">*2hours remaining</p>
-            <span class="button-cancel" style="display: block; margin: 0px 15px; margin-top: 15px; opacity: 50%">Cancel</span>
-        </div>    
-      </div>
-    </div>
-  </div>
-
   <!-- footer -->
-  <div class="footer">
-      <div class="black">
-        <span class="Copyright" style="font-size: 20px; color: white; margin: 0;">© Copyright 2020 Fox Guild. All Rights Reserved</span>
-      </div>
-  </div>
+    <footer class="page-footer blue lighten 2">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Adress & Contact</h5>
+              <span style="margin-top: 20px; font-size: 18px;"><i class="material-icons vertical-middle grey-text text-lighten-4">location_on</i> Jl. Mandor Hasan No. 41</span>
+                <br>
+                0812-3456-7890
+                <br>
+                foxcmmnty@gmail.com</p>
+            </div>
+          </div>
+        <div class="footer-copyright">
+          <a class="grey-text text-lighten-4 right" href="#!">© Copyright 2020 Fox. All Rights Reserved</a>
+        </div>
+    </footer>
+  
 
   
       <!--JavaScript at end of body for optimized loading-->
