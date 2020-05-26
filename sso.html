@@ -5,28 +5,46 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="style2.css">
   <link rel="stylesheet" href="sso.css"/>
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login with</title>
-  <style>
-  	body
-  	{
-  		background: #00fa9a;
-  	}
-  </style>
 </head>
 
-<body>
-	<div class="row">
+<body class="white">
+	<div class="navbar-fixed">
+        <nav class="blue lighten 2">
+          <div class="container">
+            <div class="nav-wrapper">
+              <div class="col s12 center-align">
+                <a href="#" class="brand-logo"><img src="img/1.png" class="vertical-align" alt="Logo" width="60"><span>Fox</span></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="index.html#Home">| Home</a></li>
+                  <li><a href="sso.html" class="text-nav">| Register</a></li>
+                  <li><a href="Login.html" class="text-nav">| Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="Login.html">Login</a></li>
+    <li><a href="Register.html">Register</a></li>
+  </ul>
 		
 	<div class="row center">
 		<div class="col s12 m4 l4">
 			
 		</div>
 		<div class="col s12 m8 l4">
-			<div class="card aqua materialize" style="margin-top: 150px;">
+			<div class="card green materialize" style="margin-top: 150px;">
 				<div class="card-content black-text center">
+					<h3>Registrasi</h3>
 					<div class="row">
 						<button class="button-take">
 							<a href="https://gmail.com/">
@@ -66,9 +84,24 @@
 				</div>
 		    </div>
 		</div>
-			
 		</div>
 	</div>
+  <!-- footer -->
+	<footer class="page-footer blue lighten 2">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Adress & Contact</h5>
+              <span style="margin-top: 20px; font-size: 18px;"><i class="material-icons vertical-middle grey-text text-lighten-4">location_on</i> Jl. Mandor Hasan No. 41</span>
+                <br>
+                0812-3456-7890
+                <br>
+                foxcmmnty@gmail.com</p>
+            </div>
+          </div>
+        <div class="footer-copyright">
+          <a class="grey-text text-lighten-4 right" href="#!">© Copyright 2020 Fox. All Rights Reserved</a>
+        </div>
+    </footer>
 
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
