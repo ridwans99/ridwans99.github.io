@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="style2.css"/>
+    <link rel="stylesheet" href="admin.css"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Admin</title>
+  </head>
+  <body>
+
+      <div class="navbar-fixed">
+        <nav class="blue lighten 2">
+          <div class="container">
+            <div class="nav-wrapper">
+              <div class="col s12 center-align">
+                <a href="#" class="brand-logo"><img src="img/1.png" class="vertical-align" alt="Logo" width="60"><span>Fox</span></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="#memberlist" class="text-nav">| Member</a></li>
+                  <li><a href="#job" class="text-nav">| Jobs</a></li>
+                  <li><a href="index.html" class="text-nav">| Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#memberlist" class="text-nav">Member</a></li>
+    <li><a href="#job" class="text-nav">Jobs</a></li>
+    <li><a href="index.html" class="text-nav">Logout</a></li>
+  </ul>
+
+    <div class="scrollspy" id="home">
+        <div class="row" style="margin: 0;">
+          <div class="col s12">
+              <!-- Modal Structure -->
+            <div id="modal-edit" class="modal">
+              <div class="modal-content" style="text-align:center;">
+                <h4>Edit Profile</h4>
+                <div class="row">
+                  <div class="col s12">
+                    <div class="input-field">
+                      <input placeholder="New Address" id="address-new" type="text" class="validate">
+                      <label for="address-new">New Address</label>
+                    </div>
+                    <div class="input-field">
+                      <input placeholder="New Phone" id="phone-new" type="text" class="validate">
+                      <label for="phone-new">New Phone</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div style="text-align:center; margin-bottom: 15px;">
+                <a class="modal-close waves-effect waves-green btn">Cancel</a>
+                <a class="modal-close waves-effect waves-green btn">Submit</a>
+                </div>
+            </div>
+
+              <div id="modal-job" class="modal">
+                <div class="modal-content" style="text-align:center;">
+                <h4>Post Job</h4>
+                <div class="row">
+                  <div class="col s12">
+                    <div class="input-field">
+                      <input placeholder="Judul Job" id="judul-job" type="text" class="validate">
+                      <label for="judul-job">Judul Job</label>
+                    </div>
+                    <div class="input-field">
+                      <input placeholder="Deskripsi Job" id="deskripsi-job" type="email" class="validate">
+                      <label for="deskripsi-job">Deskripsi Job</label>
+                    </div>
+                    <div class="input-field">
+                      <input placeholder="Rp" id="job-reward" type="number" class="validate">
+                      <label for="job-reward">Reward </label>
+                    </div>
+                    <div style="text-align: left;">
+                    <label>Job Rank</label>
+                    <select id="job-rank" name="job-rank" class="browser-default" style="margin-top: 5px;">
+                        <option value="Iron" selected>Iron</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                    </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div style="text-align:center; margin-bottom: 15px;">
+                <a class="modal-close waves-effect waves-green btn">Cancel</a>
+                <a class="modal-close waves-effect waves-green btn">Submit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row" style="padding-bottom: 20px; margin-top: 20px;">
+                <div class="col s12 m4 offset-m1">
+                    <div class="card" style="border-radius: 0px;">
+                        <div class="card-image">
+                          <img src="img/profil.png" style="width: 200px; margin: auto;" class="circle">
+                          <!-- <span class="card-title">Card Title</span> -->
+                          <a data-target="modal-edit" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"><i class="material-icons">edit</i></a>
+                        </div>
+                        <div class="card-content font-fira">
+                          <p style="font-weight: bold; text-align: center;">Administrator</p>
+                          <p id="username">Username: ridwans99</p>
+                          <p id="name-2">Name: Ridwan Syah</p>
+                          <p id="nik">NIK: 3123456789023456</p>
+                          <p id="address">Address: Jl. Bina Marga No.54</p>
+                          <p id="phone">Phone: +6281234567890</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col hide-on-small-only m6" style="margin-left: 30px; margin-top: 100px">
+                  <div style="margin-bottom: 0px; margin-top: 60px;" class="center-align">
+                  <p id="name-1" class="font-playfair-bold" style="font-size: 40px; margin-bottom: 0px; margin-top: 0px; color: black;">Selamat Datang, Ridwan Syah!</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align" id="memberlist">
+            <h4 id="memberlist">List Member</h4>
+            <div style="width: 100%; color: black">
+              <table class="center-align scrollspy" id="memberlist" style="margin: auto;">
+                <tr>
+                  <th>No</th>
+                  <th>Username</th>
+                  <th>Email</th> 
+                  <th>Rank</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>FOX_Danskuy</td>
+                  <td>Danskuy123@gmail.com</td>
+                  <td>Gold</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>FOX_Number7</td>
+                  <td>Number7@gmail.com</td>
+                  <td>Iron</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>FOX_Scthzo</td>
+                  <td>Scthzo321@gmail.com</td>
+                  <td>Silver</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>FOX_Fortnox</td>
+                  <td>Fortnoxajah@gmail.com</td>
+                  <td>Iron</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>FOX_Magic</td>
+                  <td>Magic777@gmail.com</td>
+                  <td>Platinum</td>
+                </tr>
+              </table>
+            </div>
+        </div>
+      </div>
+        <div class="row">
+            <div class="col s12 center-align" id="job" style="position:relative;">
+                <h4 id="job">List Job</h4>
+                <a data-target="modal-job" class="modal-trigger"><span id="tombol-tambah" style="position: absolute; right: 0;">+</span></a>
+            </div>
+          </div>
+          
+      <div class="">
+        <div class="container">
+          <div class="center-align scrollspy">
+          </div>
+          <div class="row">
+            <div class="col s12 m6 center-align">
+              <div class="card yellow z-depth-3" style="height: 15em;">
+                <div class="card-content white-text">
+                  <span class="card-title center-align" style="font-size: 24px; color: black; opacity: 100%">Job</span>
+                  <p style="font-family: Rockwell; opacity: 100%;">Task: Mengejar Black Knight</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Reward: Wings</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Min Rank: Silver</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Post By: FOX_Bladedance</p>
+                  <p style="font-family: Rockwell; opacity: 100%; color: red">*6hours remaining</p>
+                  <span class="button-cancel" style="display: block; margin: 0px 15px; margin-top: 15px; opacity: 150%">Cancel</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 center-align">
+              <div class="card yellow z-depth-3">
+                <div class="card-content white-text" style="height: 15em;">
+                  <span class="card-title center-align" style="font-size: 24px; color: black; opacity: 100%">Job</span>
+                  <p style="font-family: Rockwell; opacity: 100%;">Task: Menghabisi Dungeon</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Reward: Epic Sword</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Min Rank: Gold</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Post By: FOX_Magic</p>
+                  <p style="font-family: Rockwell; opacity: 100%; color: red">*8hours remaining</p>
+                  <span class="button-take" style="display: block; margin: 0px 15px; margin-top: 15px; opacity: 150%">Take</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6 center-align">
+              <div class="card yellow z-depth-3" style="height: 15em;">
+                <div class="card-content white-text">
+                  <span class="card-title center-align" style="font-size: 24px; color: black; opacity: 100%">Job</span>
+                  <p style="font-family: Rockwell; opacity: 100%;">Task: Mengejar Black Dragon</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Reward: Wings</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Min Rank: Silver</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Post By: FOX_Danskuy</p>
+                  <p style="font-family: Rockwell; opacity: 100%; color: red">*6hours remaining</p>
+                  <span class="button-take" style="display: block; margin: 0px 15px; margin-top: 15px; opacity: 150%">Take</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 center-align">
+              <div class="card yellow z-depth-3">
+                <div class="card-content white-text" style="height: 15em;">
+                  <span class="card-title center-align" style="font-size: 24px; color: black; opacity: 100%">Job</span>
+                  <p style="font-family: Rockwell; opacity: 100%;">Task: Mengikuti Pelatihan</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Reward: 700 coin</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Min Rank: Iron</p>
+                  <p style="font-family: Rockwell; opacity: 100%;">Post By: FOX_Number7</p>
+                  <p style="font-family: Rockwell; opacity: 100%; color: red">*30mins remaining</p>
+                  <span class="button-take" style="display: block; margin: 0px 15px; margin-top: 15px; opacity: 150%">Take</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <!-- footer -->
+    <footer class="page-footer blue lighten 2">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Adress & Contact</h5>
+              <span style="margin-top: 20px; font-size: 18px;"><i class="material-icons vertical-middle grey-text text-lighten-4">location_on</i> Jl. Mandor Hasan No. 41</span>
+                <br>
+                0812-3456-7890
+                <br>
+                foxcmmnty@gmail.com</p>
+            </div>
+          </div>
+        <div class="footer-copyright">
+          <a class="grey-text text-lighten-4 right" href="#!">© Copyright 2020 Fox. All Rights Reserved</a>
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      function moveNextCarousel() {
+        var elems = document.querySelector('.carousel.carousel-slider');
+        var moveRight = M.Carousel.getInstance(elems);
+        moveRight.next(1);
+      }
+
+      function logOut(event){
+        event.preventDefault();
+        sessionStorage.clear();
+        window.location.href = "index.html";
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var name = sessionStorage.getItem("full-name");
+        if (name){
+          var username = sessionStorage.getItem("username");
+          var type = sessionStorage.getItem("type-member");
+          var address = sessionStorage.getItem("address");
+          var handphone = sessionStorage.getItem("handphone");
+          var nik = sessionStorage.getItem("nik");
+
+          var htmlname = document.querySelector('#name-1');
+          var htmlname2 = document.querySelector('#name-2');
+          var htmluname = document.querySelector('#username');
+          var htmltype = document.querySelector('#type-member');
+          var htmladdress = document.querySelector('#address');
+          var htmlphone = document.querySelector('#phone');
+          var htmlnik = document.querySelector('#nik');
+          
+          var arrname = name.split(" ")
+          htmlname.textContent = "Welcome, "+arrname[0]+"!";
+          htmlname2.textContent = "Name: "+name;
+          htmluname.textContent = "Username: "+username;
+          htmltype.textContent = "Type: "+type;
+          htmladdress.textContent = "Address: "+address;
+          htmlphone.textContent = "Phone: "+handphone;
+          htmlnik.textContent = "NIK: "+nik;
+        }
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
+        var elems2 = document.querySelectorAll('.sidenav');
+        var instances2 = M.Sidenav.init(elems2, {});
+        var elems3 = document.querySelectorAll('.carousel');
+        var instances3 = M.Carousel.init(elems3, {'fullWidth':'true', 'indicators':'true'});
+        var elems4 = document.querySelectorAll('.modal');
+        var instances4 = M.Modal.init(elems4, {});
+
+        setTimeout(() => {
+          moveNextCarousel();
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
