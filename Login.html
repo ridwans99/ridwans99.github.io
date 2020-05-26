@@ -39,15 +39,17 @@
     <div class="box" style="margin-top: 20px;">
       <div class="card-content">
         <p style="text-align: center; margin-bottom: 25px; font-size:200%; color:#333533;">Registration Form</p>
-        <form class="box">
+        <form class="box" action="#" id="my_captcha_form">
           <h1>Login</h1>
           <input type="text" name="" placeholder="Username">
           <input type="password" name="" placeholder="Password">
-          <div class="login-security teal lighten-2 white-text">
-            
-          </div>
-            <input type="number" placeholder="Your Answer" name="login-security-answer">
-            <p class="red-text center-align" name="error-login"></p>
+          <label for="security" class="control-label">Pertanyaan keamanan <b class="text-danger">*</b></label>
+          <div class="security-field" style="background-color:red;color:#fff;padding:20px;">Berapakah 1+8?</div>
+          <input type="hidden" name="captcha_id" value="8">
+          <span class="block input-icon input-icon-right">
+            <input type="text" class="form-control" id="security" name="captcha" placeholder="Jawaban" required="">
+            <i class="ace-icon fa fa-pencil"></i>
+          </span>
             <a class="btn waves-effect blue btn modal-trigger" href="member.html">Login</a>
         </form>
       </div>
@@ -71,11 +73,7 @@
     </footer>
 
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>
-        const sideNav = document.querySelectorAll('.sidenav');
-        M.Sidenav.init(sideNav);
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script src="js/login.js"></script>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script src='https://www.google.com/recaptcha/api.js' async defer></script>
   </body>
 </html>
