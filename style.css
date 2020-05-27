@@ -1,0 +1,63 @@
+.brand-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    font-family: Rockwell !important;
+    color: #000 !important;
+}
+
+body ul li a {
+	color: black;
+}
+
+body p {
+	color: black;
+	font-family: times new roman;
+	text-align: center;
+	position: relative;
+}
+
+#runningtext {
+	width: 100%;
+	height: 30px;
+	padding-top: 5px;
+	margin: 9px 0 9px 0;
+	background-color: black;
+	color: red;
+	position: relative;
+}
+
+.col s12 m4 l4 {
+  padding-top: 15px;
+}
+
+.button-take {
+  background-color:#C1272D;
+  color: black;
+  padding: 5px 30px;
+  font-size: 15px;
+  font-family: Rockwell;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.button-cancel {
+  background-color:#1E90FF;
+  color: black;
+  padding: 5px 30px;
+  font-size: 15px;
+  font-family: Rockwell;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.Copyright {
+	margin: auto;
+	text-align: center;
+}
+
+.footer {
+  background-color: black;
+}
